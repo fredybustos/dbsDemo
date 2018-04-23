@@ -1,0 +1,111 @@
+body, h1, p{
+  margin: 0;
+  padding: 0;
+	font-family: 'Rancho', cursive;
+}
+.header{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+	.header h1{
+		color: green;
+		font-size: 50px;
+		margin: 0; 
+	}
+.navbar{
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  z-index: 999;
+  left: 5%;
+  padding-bottom: 15px; 
+}
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+    .navbar ul li{
+      list-style: none;
+    }
+    .navbar ul li a{
+      background: #fff;
+      padding: 5px 15px;
+      border: 1px solid green;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+     }
+     .navbar ul li a i{
+     	color: green;
+     	font-size: 35px;
+     }
+
+	.main{
+		width: 100%;
+	}
+  .container{
+    background: #fff;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transition: 1s;
+    width: 90%;
+    left: 5%;
+  }
+  .ctn{
+  	margin: 1em 0;
+  	background: #fff;
+  }
+  .animate{
+    height: 85vh;
+    overflow: scroll;
+    margin-bottom: 80px;
+  }
+  .ctn-image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+    .ctn-image img{
+      width: 99.5%;
+      height: 64vh;
+      object-fit: contain;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 1em 0;
+    }
+  .ctn-descritpion{
+    margin-top: 5px;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 20px;
+  }
+    .ctn-descritpion p{
+      margin: 0 5px;
+    }
+
+@media screen and (min-width: 667px){
+	.header h1{
+		font-size: 90px;
+	}
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.ctn{
+		width: 49%;
+	}
+}
+

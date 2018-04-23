@@ -1,0 +1,162 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<title>Dragon Ball Super</title>
+		<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet"></link>
+	</head>
+	<body>
+    <header class="header">
+      <h1 id="title">DragonBallSuper</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#ctn" id="projects"><i class="fab fa-d-and-d"></i></a>
+        </li>
+        <li>
+          <a href="#ctn2" id="educacion"><i class="fab fa-d-and-d"></i></a>
+        </li>
+        <li>
+          <a href="#ctn3" id="sobremi"><i class="fab fa-d-and-d"></i></a>
+        </li>
+        <li>
+          <a href="#ctn4" id="contacto"><i class="fab fa-d-and-d"></i></a>
+        </li>
+      </ul>
+    </nav>
+    
+    <section class="main">
+      <div id="ctn" class="container">
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://img00.deviantart.net/92bf/i/2016/338/f/f/goku_ssj_blue_kaioken_by_saodvd-daqld5r.png">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Goku</p>
+            <p>Universo 7</p>
+          </div>
+        </div>
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://vignette.wikia.nocookie.net/deathbattle/images/b/b3/Vegeta_fnf_ssgss_render_fukkatsu_no_f_by_fradayesmarkers-da64hyh.png/revision/latest?cb=20160906004953">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Vegeta</p>
+            <p>Universo 7</p>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div id="ctn2" class="container">
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://img00.deviantart.net/52d7/i/2017/235/9/5/jiren_the_gray__by_ruga_rell-dbl0yyr.png">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Jiren</p>
+            <p>Universo 11</p>
+          </div>
+        </div>
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://vignette.wikia.nocookie.net/dragonball/images/4/4e/Toppo.png/revision/latest?cb=20180128152453&path-prefix=es">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Topo</p>
+            <p>Universo 11</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ctn3" class="container">
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://i.pinimg.com/originals/41/1b/48/411b48da145308e6c8f267a32e249514.png">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Hit</p>
+            <p>Universo 6</p>
+          </div>
+        </div>
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://i.pinimg.com/originals/72/e8/d8/72e8d88b1c7235250d23ad70163c352d.png">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Kale</p>
+            <p>Universo 6</p>
+          </div>
+        </div>
+      </div>
+      <div id="ctn4" class="container">
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://pre00.deviantart.net/ddb7/th/pre/i/2017/058/9/7/bills__3_facudibuja_by_facudibuja-db0lhcb.png">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Bills</p>
+            <p>Dios</p>
+          </div>
+        </div>
+        <div class="ctn">
+          <div class="ctn-image">
+            <img src="https://pre00.deviantart.net/f360/th/pre/i/2017/220/d/9/shampa___dragon_ball_super___hakaishin_u6_by_urielalv-dbja0d3.png">
+          </div>
+          <div class="ctn-descritpion">
+            <p>Shampa</p>
+            <p>Dios</p>
+          </div>
+        </div>
+      </div>
+    </section>
+		<script>
+      let $ctn =   document.getElementById('ctn')
+      let $ctn2 = document.getElementById('ctn2')
+      let $ctn3 = document.getElementById('ctn3')
+      let $ctn4 = document.getElementById('ctn4')
+      
+      let $projects = document.getElementById('projects')
+      
+      let $educacion = document.getElementById('educacion')
+      let $sobremi = document.getElementById('sobremi')
+      let $contacto = document.getElementById('contacto')
+      let $titlePage = document.getElementById('title')
+
+       
+      function active(){
+        $ctn.classList.toggle('animate')
+        $ctn2.classList.remove('animate')
+        $ctn3.classList.remove('animate')
+        $ctn4.classList.remove('animate')
+      }
+      $projects.addEventListener('click', active)
+      
+      function active2(){
+        $ctn2.classList.toggle('animate')
+        $ctn3.classList.remove('animate')
+        $ctn4.classList.remove('animate')
+        $ctn.classList.remove('animate')
+      }
+      $educacion.addEventListener('click', active2)
+      function active3(){
+        $ctn3.classList.toggle('animate')
+        $ctn2.classList.remove('animate')
+        $ctn4.classList.remove('animate')
+        $ctn.classList.remove('animate')
+      }
+      $sobremi.addEventListener('click', active3)
+      function active4(){
+        $ctn4.classList.toggle('animate')
+        $ctn2.classList.remove('animate')
+        $ctn3.classList.remove('animate')
+        $ctn.classList.remove('animate')
+      }
+      $contacto.addEventListener('click', active4)
+
+		</script>
+	</body>
+</html> 
